@@ -6,7 +6,7 @@ let localTime = document.getElementById("localTime");
 const getWeather = (city) => {
   cityName.innerHTML = city;
   fetch(
-    `http://api.weatherapi.com/v1/current.json?key=a701af167dee40d8ae6181422230502&q=${city}&aqi=no`
+    `https://api.weatherapi.com/v1/current.json?key=a701af167dee40d8ae6181422230502&q=${city}&aqi=no`
   )
     .then((response) => response.json())
     .then((response) => {
